@@ -1,0 +1,900 @@
+:root {
+    --letras: rgb(94, 93, 93);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER Y MENÚ */
+
+.header {
+    display: flex;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.logo a {
+    color: var(--letras);
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu {
+    margin-top: 27px;
+    margin-left: 300px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    font-size: 23px;
+    padding: 0px 15px;
+}
+
+.menu ul li a {
+    color: var(--letras);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    color: rgb(36, 35, 35);
+}
+
+
+.redes {
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+.redes a {
+    font-size: 23px;
+    padding: 0px 5px;
+    color: var(--letras);
+}
+
+.redes a:hover {
+    color: rgb(36, 35, 35);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.idioma {
+    margin-top: 22px;
+    margin-left: 40px;
+}
+
+.btn-sp {
+    padding: 5px;
+    margin-right: 3px;
+    font-size: 15px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn-en {
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    color: rgb(184, 6, 6);
+    font-weight: bold;
+}
+
+/* SECCIÓN: LOS LUGARES MÁS LINDOS DEL PLANETA  */
+
+.titulo h2 {
+    font-size: 26px;
+    line-height: 38px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 30px 30px;
+}
+
+
+/* SIDE A1 */
+
+.section-a1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-a1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-a1 .description-side-a1 {
+    position: absolute;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.section-a1 .more-side-a1 {
+    position: absolute;
+    margin-top: 15%;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    background-color: rgb(212, 211, 211);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section-a1 .more-side-a1:hover {
+    background-color: rgb(185, 185, 185);
+    transition: .2s;
+}
+
+.section-a1 .info-side-a1 {
+    position: absolute;
+    padding: 10px;
+    width: 45%;
+    height: 47.4%;
+    font-size: 24px;
+    background-color: rgb(151, 151, 151);
+    display: none;
+}
+
+.section-a1 .explore {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+
+.fa-solid {
+    font-weight: normal;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.section-a1 .explore:hover {
+    color: rgb(53, 52, 52);
+    transition: .1s;
+}
+
+.section-a1 .info-side-a1.desplegar {
+    margin-left: 91.5%;
+    display: block;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.description-side-b1.quitar {
+    display: none;
+}
+
+.more-side-b1.quitar {
+    display: none;
+}
+
+/* SIDE B1 */
+
+.section-b1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-b1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-b1 .description-side-b1 {
+    position: absolute;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.section-b1 .more-side-b1 {
+    position: absolute;
+    margin-top: 15%;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    background-color: rgb(212, 211, 211);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section-b1 .more-side-b1:hover {
+    background-color: rgb(185, 185, 185);
+    transition: .2s;
+}
+
+.section-b1 .info-side-b1 {
+    position: absolute;
+    padding: 10px;
+    width: 45%;
+    height: 47.4%;
+    font-size: 23px;
+    background-color: rgb(151, 151, 151);
+    display: none;
+}
+
+.section-b1 .explore {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+.section-b1 .explore:hover {
+    color: rgb(53, 52, 52);
+    transition: .1s;
+}
+
+.section-b1 .info-side-b1.desplegar {
+    margin-left: -91.5%;
+    display: block;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.description-side-a1.quitar {
+    display: none;
+}
+
+.more-side-a1.quitar {
+    display: none;
+}
+
+
+/* SIDE A2 */
+
+.section-a2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-a2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-a2 .description-side-a2 {
+    position: absolute;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.section-a2 .more-side-a2 {
+    position: absolute;
+    margin-top: 15%;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    background-color: rgb(212, 211, 211);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section-a2 .more-side-a2:hover {
+    background-color: rgb(185, 185, 185);
+    transition: .2s;
+}
+
+.section-a2 .info-side-a2 {
+    position: absolute;
+    padding: 10px;
+    width: 45%;
+    height: 53.6%;
+    font-size: 23px;
+    background-color: rgb(151, 151, 151);
+    display: none;
+}
+
+.section-a2 .explore {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+.section-a2 .explore:hover {
+    color: rgb(53, 52, 52);
+    transition: .1s;
+}
+
+.section-a2 .info-side-a2.desplegar {
+    margin-left: 91.5%;
+    display: block;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.description-side-b2.quitar {
+    display: none;
+}
+
+.more-side-b2.quitar {
+    display: none;
+}
+
+/* SIDE B2 */
+
+.section-b2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-b2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-b2 .description-side-b2 {
+    position: absolute;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.section-b2 .more-side-b2 {
+    position: absolute;
+    margin-top: 15%;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    background-color: rgb(212, 211, 211);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section-b2 .more-side-b2:hover {
+    background-color: rgb(185, 185, 185);
+    transition: .2s;
+}
+
+.section-b2 .info-side-b2 {
+    position: absolute;
+    padding: 10px;
+    width: 45%;
+    height: 53.6%;
+    font-size: 23px;
+    background-color: rgb(151, 151, 151);
+    display: none;
+}
+
+.section-b2 .explore {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+.section-b2 .explore:hover {
+    color: rgb(53, 52, 52);
+    transition: .1s;
+}
+
+.section-b2 .info-side-b2.desplegar {
+    margin-left: -91.5%;
+    display: block;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.description-side-a2.quitar {
+    display: none;
+}
+
+.more-side-a2.quitar {
+    display: none;
+}
+
+
+/* SIDE A3 */
+
+.section-a3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-a3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-a3 .description-side-a3 {
+    position: absolute;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.section-a3 .more-side-a3 {
+    position: absolute;
+    margin-top: 15%;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    background-color: rgb(212, 211, 211);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section-a3 .more-side-a3:hover {
+    background-color: rgb(185, 185, 185);
+    transition: .2s;
+}
+
+.section-a3 .info-side-a3 {
+    position: absolute;
+    padding: 10px;
+    width: 45%;
+    height: 71%;
+    font-size: 23px;
+    background-color: rgb(151, 151, 151);
+    display: none;
+}
+
+.section-a3 .explore {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+.section-a3 .explore:hover {
+    color: rgb(53, 52, 52);
+    transition: .1s;
+}
+
+.section-a3 .info-side-a3.desplegar {
+    margin-left: 91.5%;
+    display: block;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.description-side-b3.quitar {
+    display: none;
+}
+
+.more-side-b3.quitar {
+    display: none;
+}
+
+/* SIDE B3 */
+
+.section-b3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-b3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-b3 .description-side-b3 {
+    position: absolute;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.section-b3 .more-side-b3 {
+    position: absolute;
+    margin-top: 15%;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    background-color: rgb(212, 211, 211);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section-b3 .more-side-b3:hover {
+    background-color: rgb(185, 185, 185);
+    transition: .2s;
+}
+
+.section-b3 .info-side-b3 {
+    position: absolute;
+    padding: 10px;
+    width: 45%;
+    height: 71%;
+    font-size: 23px;
+    background-color: rgb(151, 151, 151);
+    display: none;
+}
+
+.section-b3 .explore {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+.section-b3 .explore:hover {
+    color: rgb(53, 52, 52);
+    transition: .1s;
+}
+
+.section-b3 .info-side-b3.desplegar {
+    margin-left: -91.5%;
+    display: block;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.description-side-a3.quitar {
+    display: none;
+}
+
+.more-side-a3.quitar {
+    display: none;
+}
+
+
+/* SIDE A4 */
+
+.section-a4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-a4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-a4 .description-side-a4 {
+    position: absolute;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.section-a4 .more-side-a4 {
+    position: absolute;
+    margin-top: 15%;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    background-color: rgb(212, 211, 211);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section-a4 .more-side-a4:hover {
+    background-color: rgb(185, 185, 185);
+    transition: .2s;
+}
+
+.section-a4 .info-side-a4 {
+    position: absolute;
+    padding: 10px;
+    width: 45%;
+    height: 75%;
+    font-size: 23px;
+    background-color: rgb(151, 151, 151);
+    display: none;
+}
+
+.section-a4 .explore {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+.section-a4 .explore:hover {
+    color: rgb(53, 52, 52);
+    transition: .1s;
+}
+
+.section-a4 .info-side-a4.desplegar {
+    margin-left: 91.5%;
+    display: block;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.description-side-b4.quitar {
+    display: none;
+}
+
+.more-side-b4.quitar {
+    display: none;
+}
+
+/* SIDE B4 */
+
+.section-b4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-b4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-b4 .description-side-b4 {
+    position: absolute;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.section-b4 .more-side-b4 {
+    position: absolute;
+    margin-top: 15%;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    background-color: rgb(212, 211, 211);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section-b4 .more-side-b4:hover {
+    background-color: rgb(185, 185, 185);
+    transition: .2s;
+}
+
+.section-b4 .info-side-b4 {
+    position: absolute;
+    padding: 10px;
+    width: 45%;
+    height: 75%;
+    font-size: 23px;
+    background-color: rgb(151, 151, 151);
+    display: none;
+}
+
+.section-b4 .explore {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+.section-b4 .explore:hover {
+    color: rgb(53, 52, 52);
+    transition: .1s;
+}
+
+.section-b4 .info-side-b4.desplegar {
+    margin-left: -91.5%;
+    display: block;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.description-side-a4.quitar {
+    display: none;
+}
+
+.more-side-a4.quitar {
+    display: none;
+}
+
+
+/* SIDE A5 */
+
+.section-a5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-a5 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-a5 .description-side-a5 {
+    position: absolute;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.section-a5 .more-side-a5 {
+    position: absolute;
+    margin-top: 15%;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    background-color: rgb(212, 211, 211);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section-a5 .more-side-a5:hover {
+    background-color: rgb(185, 185, 185);
+    transition: .2s;
+}
+
+.section-a5 .info-side-a5 {
+    position: absolute;
+    padding: 10px;
+    width: 45%;
+    height: 71.5%;
+    font-size: 23px;
+    background-color: rgb(151, 151, 151);
+    display: none;
+}
+
+.section-a5 .explore {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+.section-a5 .explore:hover {
+    color: rgb(53, 52, 52);
+    transition: .1s;
+}
+
+.section-a5 .info-side-a5.desplegar {
+    margin-left: 91.5%;
+    display: block;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.description-side-b5.quitar {
+    display: none;
+}
+
+.more-side-b5.quitar {
+    display: none;
+}
+
+/* SIDE B5 */
+
+.section-b5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-b5 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-b5 .description-side-b5 {
+    position: absolute;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.section-b5 .more-side-b5 {
+    position: absolute;
+    margin-top: 15%;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    background-color: rgb(212, 211, 211);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section-b5 .more-side-b5:hover {
+    background-color: rgb(185, 185, 185);
+    transition: .2s;
+}
+
+.section-b5 .info-side-b5 {
+    position: absolute;
+    padding: 10px;
+    width: 45%;
+    height: 71.5%;
+    font-size: 23px;
+    background-color: rgb(151, 151, 151);
+    display: none;
+}
+
+.section-b5 .explore {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+.section-b5 .explore:hover {
+    color: rgb(53, 52, 52);
+    transition: .1s;
+}
+
+.section-b5 .info-side-b5.desplegar {
+    margin-left: -91.5%;
+    display: block;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.description-side-a5.quitar {
+    display: none;
+}
+
+.more-side-a5.quitar {
+    display: none;
+}
+
+/* FOOTER */
+
+.footer-container {
+    display: flex;
+    margin: 50px 0 15px 0;
+    font-size: 20px;
+    justify-content: space-around;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.footer-item h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-item a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.footer-item a i {
+    margin-right: 7px;
+}
+
+.footer-item p {
+    color: #000000;
+    padding-bottom: 10px;
+}
+
+.footer-derechos {
+    background: #f7f4f4;
+    color: #616161;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer-derechos p {
+    color: #000000;
+    text-align: left;
+    margin-left: 25px;
+    padding-bottom: 5px;
+    font-size: 15px;
+
+}
+
+.footer-derechos img {
+    width: 70px;
+}
+
+.footer-item a:hover {
+    color: #616161;
+}
+
+.links a:hover {
+    color: #2b2929;
+}

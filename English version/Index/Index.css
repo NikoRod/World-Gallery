@@ -1,0 +1,489 @@
+:root {
+    --letras: rgb(94, 93, 93);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER Y MENÚ */
+
+.header {
+    display: flex;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.logo a {
+    color: var(--letras);
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu {
+    margin-top: 27px;
+    margin-left: 300px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    font-size: 23px;
+    padding: 0px 15px;
+}
+
+.menu ul li a {
+    color: var(--letras);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    color: rgb(36, 35, 35);
+}
+
+#inicio {
+    color: rgb(36, 35, 35);
+}
+
+.redes {
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+.redes a {
+    font-size: 23px;
+    padding: 0px 5px;
+    color: var(--letras);
+}
+
+.redes a:hover {
+    color: rgb(36, 35, 35);
+}
+
+.idioma {
+    margin-top: 22px;
+    margin-left: 40px;
+}
+
+.btn-sp {
+    padding: 5px;
+    margin-right: 3px;
+    font-size: 15px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn-en {
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    color: rgb(184, 6, 6);
+    font-weight: bold;
+}
+
+/* BANNER PRINCIPAL */
+
+.banner-principal .foto {
+    width: 100%;
+    height: 593px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.banner-principal .black {
+    width: 100%;
+    height: 593px;
+    margin-top: 10px;
+    position: absolute;
+    opacity: 50%;
+}
+
+.banner-principal .line {
+    position: absolute;
+    color: #fff;
+    top: 45%;
+    margin-left: 450px;
+    width: 15em;
+    border-right: 2px solid #fff;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.anim-typewriter {
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent ;
+    }
+}
+
+.banner-principal a button {
+    position: relative;
+    margin-top: 296.5px;
+    margin-left: 580px;
+    padding: 5px 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgb(196, 198, 199);
+    cursor: pointer;
+}
+
+.banner-principal a button:hover {
+    background-color: rgb(238, 235, 235);
+    transition: .2s;
+}
+
+/* GALLERY LUGARES*/
+
+.lugares-titulo {
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.fa-solid {
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.gallery-lugares {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 390px;
+    margin-left: 40px;
+}
+
+.imagen1 {
+    background: url(/Imagenes/Index/gallery-img1.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    margin-left: 435px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.imagen2 {
+    background: url(/Imagenes/Index/gallery-img2.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    margin-left: 870px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.imagen3 {
+    background: url(/Imagenes/Index/gallery-img3.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+    opacity: 0;
+    transition: .5s;
+}
+
+.contenido h2, a {
+    color: rgb(197, 196, 196);
+}
+
+.contenido h2 {
+    font-size: 30px;
+}
+
+.contenido a {
+    margin-top: 40px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.contenido a:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+.imagen1:hover .contenido,
+.imagen2:hover .contenido,
+.imagen3:hover .contenido {
+    opacity: 1;
+}
+
+/* GALLERY ANIMALES */
+
+.animales-titulo {
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.animales-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    margin-left: 50px;
+    margin-top: 590px;
+}
+
+.animales-img {
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000;
+    transition: .5s;
+}
+
+.animales-img:hover {
+    transform: scale(.97, .97);
+}
+
+.animales p {
+    font-size: 35px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.animales a {
+    font-size: 20px;
+    margin-top: 3px;
+    margin-left: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.animales a:hover {
+    color: rgb(66, 65, 65);
+}
+
+/*                  FORM DE CONTACTO                 */
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo-contacto {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+
+.logo-contacto span {
+    color: #666666;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #ffffff;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid #505050;
+}
+
+.contact-form form button {
+    background: #505050;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    width: 100%;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #909090;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+
+.contact-info {
+    background: #909090;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* PANTALLA COMPETA */
+
+@media(min-width: 700px) {
+    .content {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+/* FOOTER */
+
+.footer-container {
+    display: flex;
+    margin: 50px 0 15px 0;
+    font-size: 20px;
+    justify-content: space-around;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.footer-item h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-item a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.footer-item a i {
+    margin-right: 7px;
+}
+
+.footer-item p {
+    color: #000000;
+    padding-bottom: 10px;
+}
+
+.footer-derechos {
+    background: #f7f4f4;
+    color: #616161;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer-derechos p {
+    color: #000000;
+    text-align: left;
+    margin-left: 25px;
+    padding-bottom: 5px;
+    font-size: 15px;
+
+}
+
+.footer-derechos img {
+    width: 70px;
+}
+
+.footer-item a:hover {
+    color: #616161;
+}
+
+.links a:hover {
+    color: #2b2929;
+}
